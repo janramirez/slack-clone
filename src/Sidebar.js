@@ -1,4 +1,4 @@
-import { Add, Apps, BookmarkBorder, CreateOutlined, Drafts, ExpandLess, ExpandMore, FiberManualRecord, FileCopy, Inbox, InsertComment, ListAlt, ListTwoTone, PeopleAlt } from '@mui/icons-material';
+import { Add, Apps, BookmarkBorder, CreateOutlined, Drafts, ExpandLess, ExpandMore, FiberManualRecord, FileCopy, Inbox, InsertComment, PeopleAlt } from '@mui/icons-material';
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import SidebarOption from './SidebarOption';
@@ -43,7 +43,7 @@ function Sidebar() {
       <hr/>
       < SidebarOption Icon={ExpandMore} title="Channels"/>
       <hr/>
-      < SidebarOption Icon={Add} title="Add Channel"/>
+      < SidebarOption Icon={Add} addChannelOption title="Add Channel"/>
       
       {/* Connect to db */}
       {channels.map(channel => (
